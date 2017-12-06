@@ -18,6 +18,7 @@ The following extra packages are needed to mutation test Angular project with St
 "stryker-jasmine": "^0.7.1",
 "stryker-karma-runner": "^0.11.1",
 "stryker-typescript": "^0.6.0",
+"stryker-webpack": "^0.0.2",
 "karma-phantomjs-launcher": "^1.0.4",
 "phantomjs-prebuilt": "^2.1.16"
 ```
@@ -32,17 +33,3 @@ There are a few extra files you need in your project so Stryker is able to creat
 ```bash
 cp -r * /location/of/your/angular/project/root
 ```
-
-## Stryker webpack plugin
-The last piece you need it the [stryker-webpack-plugin](https://github.com/Archcry/stryker-webpack), clone it and install it in your project. A useful tool you can use is [install-local](https://www.npmjs.com/package/install-local). The plugin is not officially released by Stryker yet. But this workaround won't be needed when it's officially released by Stryker anyways.
-
-within your Angular project run:
-```bash
-install-local /path/to/stryker-webpack
-```
-
-install-local also supports saving the install in your package.json
-```bash
-install-local --save /path/to/stryker-webpack
-```
-Be aware that `npm` might delete packages that are not defined in the package.json when using `npm install`. This includes packages that are defined in the package.json by `install-local`.
