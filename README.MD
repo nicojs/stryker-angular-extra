@@ -17,15 +17,10 @@ The following extra packages are needed to mutation test Angular project with St
 "stryker-api": "^0.11.0",
 "stryker-jasmine": "^0.7.1",
 "stryker-karma-runner": "^0.11.1",
-"stryker-typescript": "^0.6.0",
+"stryker-typescript": "^0.8.0",
 "stryker-webpack": "^0.0.2",
 "karma-phantomjs-launcher": "^1.0.4",
 "phantomjs-prebuilt": "^2.1.16"
-```
-
-Also make sure you update `typescript` to atleast version `2.5.0`, under devDependencies:
-```javascript
-"typescript": "~2.5.0",
 ```
 
 ## Extra files
