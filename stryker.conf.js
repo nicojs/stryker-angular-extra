@@ -26,8 +26,7 @@ module.exports = function (config) {
 
       // Stryker configuration needed to transpile with Webpack
       './stryker/*.js',
-      './stryker/*.ts',
-      './stryker/tsconfig.json'
+      './stryker/*.ts'
     ],
     testRunner: 'karma',
     mutator: 'typescript',
