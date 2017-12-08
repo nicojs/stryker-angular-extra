@@ -32,7 +32,7 @@ module.exports = function (config) {
     mutator: 'typescript',
     testFramework: 'jasmine',
     transpilers: ['webpack'],
-    reporter: ['clear-text', 'progress'],
+    reporter: ['clear-text', 'progress', 'html'],
     coverageAnalysis: 'off',
     karmaConfigFile: './stryker/karma.conf.js',
     project: 'angular',
